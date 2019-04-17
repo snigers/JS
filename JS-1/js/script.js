@@ -88,8 +88,36 @@ if (admin == "admin") {
 
 } */
 
-var a = 2;
+/* var a = 2;
 var b = 1;
 var result;
 (a + b < 4) ? result = 'Мало' : result = 'Много';
-alert(result);
+alert(result); */
+
+// var x;
+
+/* false || (x = 1);
+alert(x); */
+/* var undef;
+var zero = 0;
+var emptyStr = "";
+var msg = "Привет!";
+
+var result = undef || zero || emptyStr || msg;
+// alert(result);
+var age = 16;
+if (!(age >= 14 && age <= 90)) {
+  alert('Возраст в заданном промежутке!');
+} else {
+  alert('Возраст не угадал!');
+} */
+
+/* var a = true;
+
+alert(a); */
+
+// alert(String(null) === "null");
+// alert( true + "test");
+var a = +"123"; //преобразование к числу с помощью унарного "+"
+
+alert( +"  \n 123 \n \n");
