@@ -44,9 +44,9 @@ function chackAge(age) {
 // count();
 // showMessage('Маша', 'Привет!');
 // showMessage('Маша');
-var a = prompt('a');
-var b = prompt('b');
-alert(pow(a,b));
+// var a = prompt('a');
+// var b = prompt('b');
+// alert(pow(a,b));
 function pow(a, b) {
   var num = a;
 
@@ -63,4 +63,42 @@ function pow(a, b) {
   }
   return num;
 }
+
+// var age = prompt("Сколько вам лет?");
+
+// var sayHi = (age >= 18) ?
+//   function() {alert('Прошу вас!');} :
+//   function() {alert('До 18 нельзя!');};
+
+// sayHi();
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+// function showOk() {
+//   alert('Вы согласились.');
+// }
+
+// function showCancel() {
+//   alert('Вы отказались.');
+// }
+
+// ask(
+//   "Вы согласны?",
+//   function() {alert('Вы согласились.');},
+//   function() {alert('Вы отказались.');}
+// );
+
+function sumTo(n) {
+  var result = 0;
+  for (var i = 1; i <= n; i++) {
+    
+    result += i; 
+  }
+  return result;
+}
+
+alert(sumTo(100));
 
