@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Подключаем стили Mocha, для отображения результатов -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+  <!-- Подключаем библиотеку Mocha -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+  <!-- Настраиваем Mocha: предстоит BDD-тестирование -->
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <!-- Подключаем chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+  <!-- В chai есть много всего, выносим assert в глобальную область -->
+  <script>
+    var assert = chai.assert;
+  </script>
+  <!-- <title>Document</title> -->
+</head>
+<body>
+  <script>
+    function pow(x, n) {
+      var result = 1;
+
+      for (var i = 0; i < n; i++) {
+        result *= x;
+      }
+
+      return result;
+    }  
+  </script>
+
+  <!-- В этом скрипте находится спеки -->
+  <script src="js/test.js"></script>
+
+  <!-- в элементе с id="mocha" будут результаты тестов -->
+  <div id="mocha"></div>
+
+  <!-- Запустить тесты -->
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>
