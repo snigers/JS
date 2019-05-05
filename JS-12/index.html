@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document - Global object</title>
+</head>
+<body>
+  <script>
+    var message = "Пожалуйста, нажми на кнопку";
+  </script>
+  <script src="js/script.js"></script>
+
+  <button>Кнопка</button>
+  <script>
+    alert( message );
+  </script>
+
+  <p>Подключим библиотека</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+
+  <p>Функция <code>_.defaults()</code> добавляет отсутствующие свойства.</p>
+  <script>
+    var user = {
+      name: "Вася"
+    };
+
+    _.defaults(user, {
+      name: "Не указано",
+      emloyer: 'Не указан'
+    });
+
+    alert( user.name );
+    alert( user.employer );
+    alert( _.size(user) );
+  </script>
+
+</body>
+</html>
